@@ -5,7 +5,7 @@ const WETH9 = require("../WETH9.json")
 async function main() {
 
     const [owner] = await ethers.getSigners()
-    console.log(owner.address)
+    console.log("Owner: ", owner.address)
 
     const DaiFactory = await ethers.getContractFactory("Dai", owner);
     const Dai = await DaiFactory.deploy();
@@ -34,7 +34,7 @@ async function main() {
 
     // Get the deployed contract address
     const wethAddress = await weth.getAddress();
-    console.log('weth', wethAddress)
+    console.log('WETH Deployed at: ', wethAddress)
 
  }
 

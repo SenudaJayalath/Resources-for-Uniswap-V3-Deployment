@@ -1,4 +1,4 @@
-# Deploy a seet of mock contracts
+# Deploy a set of mock contracts
 
 Follow the following steps to deploy the set of mock contracts to our local EVM blockchain
 
