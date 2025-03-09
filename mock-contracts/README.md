@@ -12,6 +12,8 @@ Ensure that your `PRIVATE_KEY` and `RPC_URL` are correctly set up in `hardhat.co
 After your `hardhat.config.js` properly configured run the following command
 
 ```shell
-npx hardhat run scripts/deployContract.js --network localnet
+npx hardhat run scripts/deployMockContracts.js --network localnet
 ```
+
+Output of deployed Addresses will be written to `deployedAddresses.json` file.
  

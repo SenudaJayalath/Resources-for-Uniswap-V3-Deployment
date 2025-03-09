@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Deploy Uniswap Pool
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Follow the following steps to create and deploy a set of Uniswap Pools
+```shell
+npm install --force
+npx hardhat compile
+```
 
-Try running some of the following tasks:
+Ensure that your `PRIVATE_KEY` and `RPC_URL` are correctly set up in `hardhat.config.js`. Use a private key with preloaded ETH for an easier deployment experience.
+
+Populate the `UNISWAP_CORE_CONTRACT_ADDRESS_PATH` and `MOCK_CONTRACT_ADDRESS_PATH` with the path directory for output of deploying Uniswap contracts and Mock ERC20 contracts in the previous steps
+
+After everything is properly configured run the following command
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+npx hardhat run scripts/deployPool.js --network localnet
 ```

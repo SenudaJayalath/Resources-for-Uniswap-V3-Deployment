@@ -280,6 +280,47 @@
       "artifacts": [
         "Matic"
       ]
+    },
+    "/Users/senuda/Development/My_Work/Resources-for-Uniswap-V3-Deployment/mock-contracts/contracts/Usdc.sol": {
+      "lastModificationDate": 1741513353928,
+      "contentHash": "2ea4df11dfad1584a20f19344461c06c",
+      "sourceName": "contracts/Usdc.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Usdc"
+      ]
     }
   }
 }
